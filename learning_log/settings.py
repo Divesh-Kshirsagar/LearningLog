@@ -100,7 +100,7 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 
 DATABASE = {
     'default': dj_database_url.config(
-        default='postgresql://postgres:Divesh@123@localhost:5432/LearningLog_db',
+        default='postgresql://postgres:Divesh@123@localhost:5432/learninglog_db',
         conn_max_age=600
     )
 }
