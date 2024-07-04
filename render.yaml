@@ -2,7 +2,7 @@ databases:
   - name: learninglog
     plan: free
     databaseName: learninglog_db
-    user: postgres
+    user: Divesh
 
 services:
   - type: web
