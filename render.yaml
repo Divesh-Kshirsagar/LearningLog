@@ -1,8 +1,8 @@
 databases:
-  - name: LearningLog_db
+  - name: LearningLog
     plan: free
     databaseName: LearningLog_db
-    user: LearningLog_db
+    user: postgres
 
 services:
   - type: web
