@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -98,9 +97,10 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 # }
 
 
+import dj_database_url
+
 DATABASE = {
     'default': dj_database_url.config(
-        "ENGINE": "django.db.backends.postgresql",
         default='postgresql://divesh:Divesh@123@localhost:5432/learninglog_db',
         conn_max_age=600
     )
