@@ -1,0 +1,4 @@
+/migrations/*
+/__pycache__/*
+ll_env
+static-files
