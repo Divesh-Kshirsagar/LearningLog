@@ -1,5 +1,5 @@
 databases:
-  - name: LearningLog
+  - name: postgres
     plan: free
     databaseName: LearningLog_db
     user: postgres
