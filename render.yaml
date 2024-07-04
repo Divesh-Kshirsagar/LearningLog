@@ -1,7 +1,7 @@
 databases:
   - name: learning_log
     plan: free
-    databaseName: mysite
+    databaseName: learning_logdb
     user: learning_log
 
 services:
