@@ -1,20 +1,20 @@
 databases:
-  - name: learning_log
+  - name: LearningLog_db
     plan: free
-    databaseName: learning_logdb
-    user: learning_log
+    databaseName: LearningLog_db
+    user: LearningLog_db
 
 services:
   - type: web
     plan: free
-    name: learning_log
+    name: LearningLog_db
     runtime: python
     buildCommand: "./build.sh"
-    startCommand: "python -m gunicorn learning_log.asgi:application -k uvicorn.workers.UvicornWorker"
+    startCommand: "python -m gunicorn LearningLog_db.asgi:application -k uvicorn.workers.UvicornWorker"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: learning_logdb
+          name: LearningLog_db
           property: connectionString
       - key: django-insecure-bpyvp@^(hje^8m!5^vb!r!ocptcizetuxm#_2pe%2759l8sy0p
         generateValue: true
