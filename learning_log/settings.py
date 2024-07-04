@@ -94,19 +94,30 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 #         'HOST': 'localhost',  # Set to '127.0.0.1' or your MySQL server IP address
 #         'PORT': '3306',  # Default MySQL port
 #     }
-# }
 
 
-import dj_database_url
-
-DATABASE = {
-    'default': dj_database_url.config(
-        default='postgresql://divesh:Divesh123@localhost:5432/learninglog_db',
-        conn_max_age=600
-    )
+DATABASES = {
+    "default": {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'LearningLog_db',
+        'USER': 'root',
+        'PASSWORD': 'Divesh@123',
+        'HOST': 'localhost',  # Set to '127.0.0.1' or your MySQL server IP address
+        'PORT': '3306',  # Default MySQL port
+     }
 }
 
+# import dj_database_url
+
 # DATABASE = {
+#     'default': dj_database_url.config(
+#         default='postgresql://divesh:Divesh123@localhost:5432/learninglog_db',
+#         conn_max_age=600,
+#         conn_health_checks=True,
+#     )
+# }
+
+# DATABASEs = {
 #     "default": {
 #         "ENGINE": "django.db.backends.postgresql",
 #         "NAME": "learninglog_db",
