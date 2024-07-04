@@ -86,8 +86,7 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
+'''DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'LearningLog_db',
         'USER': 'root',
@@ -95,6 +94,15 @@ DATABASES = {
         'HOST': 'localhost',  # Set to '127.0.0.1' or your MySQL server IP address
         'PORT': '3306',  # Default MySQL port
     }
+}'''
+
+
+DATABASE = {
+    'default': dj_database_url.config(
+        # Replace this value with your local database's connection string.
+        default='postgresql://postgres:postgres@localhost:5432/LearningLog',
+        conn_max_age=600
+    )
 }
 
 
