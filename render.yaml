@@ -2,7 +2,7 @@ databases:
   - name: learninglog
     plan: free
     databaseName: learninglog_db
-    user: Divesh
+    user: divesh
 
 services:
   - type: web
@@ -16,7 +16,7 @@ services:
         fromDatabase:
           name: learninglog
           property: connectionString
-      - key: django-insecure-bpyvp@^(hje^8m!5^vb!r!ocptcizetuxm#_2pe%2759l8sy0p
+      - key: SECRET_KEY
         generateValue: true
       - key: WEB_CONCURRENCY
         value: 4
