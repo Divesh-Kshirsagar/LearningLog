@@ -101,10 +101,21 @@ import dj_database_url
 
 DATABASE = {
     'default': dj_database_url.config(
-        default='postgresql://divesh:Divesh@123@localhost:5432/learninglog_db',
+        default='postgresql://divesh:Divesh123@localhost:5432/learninglog_db',
         conn_max_age=600
     )
 }
+
+# DATABASE = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "learninglog_db",
+#         "USER": "divesh",
+#         "PASSWORD": "Divesh@123",
+#         "HOST": "localhost",
+#         "PORT": "5432",
+#     }
+# }
 
 
 # Password validation
