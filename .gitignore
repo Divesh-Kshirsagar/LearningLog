@@ -2,3 +2,4 @@
 /__pycache__/*
 ll_env
 static-files
+db.sqlite3
