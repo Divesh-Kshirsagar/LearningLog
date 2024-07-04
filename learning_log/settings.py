@@ -86,6 +86,15 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+
 # DATABASES = {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'LearningLog_db',
@@ -96,16 +105,16 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 #     }
 
 
-DATABASES = {
-    "default": {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'LearningLog_db',
-        'USER': 'root',
-        'PASSWORD': 'Divesh@123',
-        'HOST': 'localhost',  # Set to '127.0.0.1' or your MySQL server IP address
-        'PORT': '3306',  # Default MySQL port
-     }
-}
+# DATABASES = {
+#     "default": {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'LearningLog_db',
+#         'USER': 'root',
+#         'PASSWORD': 'Divesh@123',
+#         'HOST': 'localhost',  # Set to '127.0.0.1' or your MySQL server IP address
+#         'PORT': '3306',  # Default MySQL port
+#      }
+# }
 
 # import dj_database_url
 
