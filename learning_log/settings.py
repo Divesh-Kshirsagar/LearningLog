@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-bpyvp@^(hje^8m!5^vb!r!ocptcizetuxm#_2pe%2759l8sy0p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://learninglog-s6qp.onrender.com"]
+ALLOWED_HOSTS = ['learninglog-s6qp.onrender.com']
 
 
 # Application definition
